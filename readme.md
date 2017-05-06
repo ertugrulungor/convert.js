@@ -6,10 +6,10 @@ This is a simple conversion library -  https://yazilimmuhendisiyizbiz.github.io/
 
 
 ----------
-###Bower Install
+### Bower Install
 	bower install convert.js
 
-###npm Install
+### npm Install
 	npm install convertjs
 ----------
 
@@ -199,6 +199,27 @@ convert.ObjectToArray("hello, world", ",");
 
 convert.ObjectToArray("hello", "");
 => ["h", "e", "l", "l", "o"] 
+
+```
+
+convert.JsontoXML(obj)
+-----------------------
+
+```javascript
+data =   {
+  "kutuphane": {
+    "kitap": [
+      " Kitap 1",
+      " Kitap 2"
+    ]
+  }
+}
+	 
+convert.JsontoXML(data);
+=><kutuphane>
+	<kitap> Kitap 1</kitap>
+	<kitap> Kitap 2</kitap>
+  </kutuphane>
 
 ```
 
